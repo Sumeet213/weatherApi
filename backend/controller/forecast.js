@@ -8,7 +8,7 @@ module.exports = {
   async addForecasts(req, res) {
     try {
       let city = req.body.cityName;
-      let URL = `http://api.weatherapi.com/v1/forecast.json?key=a017e6bb457a459da03122140223010&q=${city}&days=1&aqi=no&alerts=no`;
+      let URL = `http://api.weatherapi.com/v1/forecast.json?key=${process.env.WEATHER_API_KEY}&q=${city}&days=1&aqi=no&alerts=no`;
       let checkForecast = await axios.get(`${URL}`);
       console.log('checkForecast.data', checkForecast.data);
       var url_parts = url.parse(URL, true);

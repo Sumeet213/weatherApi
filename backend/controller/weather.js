@@ -8,7 +8,7 @@ module.exports = {
   async checkWeather(req, res) {
     try {
       let city = req.body.cityName;
-      let URL = `http://api.weatherapi.com/v1/current.json?key=a017e6bb457a459da03122140223010&q=${city}&aqi=no`;
+      let URL = `http://api.weatherapi.com/v1/current.json?key=${process.env.WEATHER_API_KEY}&q=${city}&aqi=no`;
       let weatherAPI = await axios.get(`${URL}`);
       var url_parts = url.parse(URL, true);
       if (weatherAPI && weatherAPI.status === 200) {
