@@ -7,7 +7,14 @@
 
 
 
-## Stacks ued
+## Stacks used
 
 - Node.js / express.js , MongoDB for backend
 - React.js / redux for frontend
+
+
+
+## Api Endpoints
+
+-  /weather/add  To get the weather
+-  /forecast/add To get the forecast
