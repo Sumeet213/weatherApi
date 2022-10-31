@@ -2,6 +2,8 @@
 -  Can predict current weather / forecast weather
 
 ## How to run
+-  Unzip the file
+-  Setup relevant .env variables
 -  Run the command npm start in weatherApi/backend to run the backend server
 -  Run the command npm start in weatherApi/frontend to run the frontend server
 
